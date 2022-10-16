@@ -1,3 +1,7 @@
+CREATE DATABASE prueba_tecnica;
+
+USE DATABASE prueba_tecnica;
+
 CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(256),
@@ -13,6 +17,5 @@ CREATE TABLE project (
     start_date DATE NOT NUll,
     end_date DATE NOT NULL,
     budget FLOAT NOT NULL,
-    files VARCHAR(256) NOT NULL,
     FOREIGN KEY (id_user) REFERENCES user(id)
 );
